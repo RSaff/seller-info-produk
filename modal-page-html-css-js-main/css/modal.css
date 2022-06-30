@@ -1,0 +1,135 @@
+.container-modal{
+   position: absolute;
+   top:0;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   width:100%;
+   height:100%;
+   background:rgba(0,0,0,0.6);
+   display:none;
+}
+
+.modal{
+    position: relative;
+    width:360px;
+    height:456px;
+    background:#fff;
+    border-radius:16px;
+    padding:56px 32px 32px 32px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+.bi-x{
+    position:absolute;
+    font-size:30px;
+    right:30px;
+    top:15px;
+    cursor:pointer;
+}
+
+.modal .btn button{
+    position:relative;
+}
+.bi-whatsapp{
+    font-size:20px;
+}
+
+.alert p{
+    font-size:14px;
+}
+.alert p:nth-child(2){
+    margin:10px 0;
+    font-size:14px;
+    color:#8a8a8a;
+}
+.detail-box{
+    width:296px;
+    height:200px;
+    background: #EEEEEE;
+    border-radius: 16px;
+    padding:16px;
+    display:flex;
+    flex-direction:column;
+    align-items:start;
+    row-gap:16px;
+}
+.judul-detail{
+    width:100%;
+    text-align:center;
+}
+.detail{
+    display:flex;
+    flex-direction:column;
+    row-gap:16px;
+}
+.detail .profil{
+    display:flex;
+    column-gap:15px;
+}
+.detail .nama p{
+    font-size:14px;
+}
+.detail .nama p:nth-child(2){
+    font-size:10px;
+    color:#8a8a8a;
+}
+.detail .info{
+    display:flex;
+    column-gap:15px;
+}
+.detail .info p{
+    font-size:14px;
+    color:#000;
+}
+.detail .info p:nth-child(2){
+    font-size:14px;
+    color:#000;
+}
+.modal .btn button{
+    width:296px;
+    height:48px;
+    background: #7126B5;
+    color: #fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:14px;
+    position:relative;
+}
+.bi-whatsapp{
+    font-size:13px;
+    position:absolute;
+    right:20px;
+    top:50%;
+    transform:translate(-50%,-50%);
+}
+.tarik{
+    position:absolute;
+    width:60px;
+    height:6px;
+    background:#c4c4c4;
+    top:30px;
+    border-radius:20px;
+}
+@media screen and (max-width:417px){
+    .modal{
+        position:absolute;
+        bottom:0;
+        width:100%;
+        border-radius:16px 16px 0 0;
+    }
+    .bi-x{
+        display:none;
+    }
+    
+}
+@media screen and (min-width:417px){
+    .tarik{
+        display:none;
+    }
+
+    
+}
